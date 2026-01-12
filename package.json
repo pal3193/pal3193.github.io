@@ -1,0 +1,23 @@
+{
+  "name": "my-blog",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "npm run build && gh-pages -d dist -t"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/sitemap": "^3.6.1",
+    "astro": "^5.16.4",
+    "astro-pagefind": "^1.8.5",
+    "pagefind": "^1.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
